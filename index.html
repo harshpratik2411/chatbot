@@ -12,19 +12,18 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Chat History</h2>
-      <ul id="chat-history">
-        <!-- JS will insert messages here -->
-      </ul>
+      <ul id="chat-history"></ul>
     </aside>
 
     <!-- Chat area -->
-    <div class="chat-section">
-      <div class="container" id="chat-container">
+    <div class="chat-section"> 
+      <div class="container" id="chat-container"> 
+        <span>
+            <h1>Welcome To Chat Bot </h1>
+        </span>
         <div class="Ai-chat-box">
           <img src="https://robohash.org/beautifulrobot123.png?set=set2" class="AI-img" alt="AI" />
-          <div class="Ai-chat-area">
-            Hello! How can I help you?
-          </div>
+          <div class="Ai-chat-area">Hello! How can I help you?</div>
         </div>
       </div>
 
@@ -33,11 +32,18 @@
         <input type="text" class="search" placeholder="Search Here....." />
         <button id="img">
           <i class="fa-solid fa-images" style="color: white;"></i>
-          <input type="file" accept="images/*" hidden />
+          <input type="file" accept="image/*" hidden />
         </button>
-         <button id="send-btn">
-    <i class="fa-solid fa-paper-plane" style="color: white;"></i>
-  </button>
+        <button id="send-btn">
+          <i class="fa-solid fa-paper-plane" style="color: white;"></i>
+        </button>
+      </div>
+
+      <!-- Image Preview + Optional Text Input -->
+      <div class="image-preview-section" style="display: none; padding: 10px; background: #1e1e1e;">
+        <p style="color: #ccc;">Image Selected:</p>
+        <img id="preview-img" style="max-width: 150px; border-radius: 6px; margin-bottom: 10px;" />
+        <input type="text" id="image-text" placeholder="Enter message related to image..." style="width: 100%; padding: 8px; margin-top: 5px;" />
       </div>
     </div>
   </div>
