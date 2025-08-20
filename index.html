@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chat Bot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Chat History</h2>
+      <ul id="chat-history">
+        <!-- JS will insert messages here -->
+      </ul>
+    </aside>
+
+    <!-- Chat area -->
+    <div class="chat-section">
+      <div class="container" id="chat-container">
+        <div class="Ai-chat-box">
+          <img src="https://robohash.org/beautifulrobot123.png?set=set2" class="AI-img" alt="AI" />
+          <div class="Ai-chat-area">
+            Hello! How can I help you?
+          </div>
+        </div>
+      </div>
+
+      <!-- Input prompt -->
+      <div class="prompt">
+        <input type="text" class="search" placeholder="Search Here....." />
+        <button id="img">
+          <i class="fa-solid fa-images" style="color: white;"></i>
+          <input type="file" accept="images/*" hidden />
+        </button>
+         <button id="send-btn">
+    <i class="fa-solid fa-paper-plane" style="color: white;"></i>
+  </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
